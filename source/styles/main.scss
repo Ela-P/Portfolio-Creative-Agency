@@ -1,0 +1,14 @@
+//write here your scss styles
+
+@import '../styles/shared/index.scss';
+@import './sections/index.scss';
+@import './reset.scss';
+
+html {
+    font-family: "Playfair Display";
+    font-size: 16px;
+}
+
+.conainer--no-padding {
+    padding: 0;
+}

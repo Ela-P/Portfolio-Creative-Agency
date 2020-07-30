@@ -1,0 +1,139 @@
+.about-tajam {
+    min-width: 1620px;
+    min-height: 100vh;
+    background:  url("../../img/trees.png");
+    background-size: cover;
+   // background: linear-gradient( hsl(246, 81%, 10%) 0%, hsl(258, 53%, 24%) 100%),;
+}
+
+.about-tajam__img {
+    width: 100%;
+}
+
+.about-tajam__icon {
+    display: flex;
+    width: 44px;
+    height: 50px;
+    background-color:  hsl(176, 100%, 44%) 0%, hsl(199, 56%, 55%);
+}
+.about-tajam__brand {
+    display: flex;
+     color: hsl(199, 56%, 55%);
+    font-family: "Roboto - Thin";
+    font-size: 30px;
+    font-weight: 400;
+}
+.about-tajam-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+.about-tajam-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-tajam-menu__item {
+    padding-top: 40px;
+    padding-right: 20px;
+    font-family: "Roboto - Black";
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.activ {
+    color:  hsl(176, 100%, 44%);
+}
+
+
+.about-tajam-name {
+min-width: 510px;
+min-height: 31px;
+display: flex;
+justify-content: center;
+padding-top: 180px;
+
+}
+
+.about-tajam-name__title {
+    color: #ffffff;
+    font-family: "Playfair Display - Black";
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+
+.about-tajam-name__line {
+display: flex;
+justify-content: center;
+padding-top: 20px;
+padding-bottom: 50px;
+}
+
+.about-tajam-line {
+    width: 50px;
+    box-align: center;
+    border: 1px solid hsl(176, 100%, 44%);
+}
+
+.about-tajam-name-subtitle {
+    width: 771px;
+   height: 62px;
+   margin: 0 auto;
+}
+
+.about-tajam-name-subtitle__description {
+text-align: center;
+color: #ffffff;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+
+letter-spacing: 0.7px;
+}
+
+.about-tajam-click {
+    position: absolute;
+    top: 540px;
+    left: 770px;
+    border: 1px solid hsl(176, 100%, 44%);
+}
+.about-tajam-click__button {
+    padding: 15px;
+    background: transparent;
+    color: hsl(176, 100%, 44%);
+    font-family: "Hammersmith One";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about-tajam-transition {
+    display: flex;
+    position: absolute;
+    top: 770px;
+    left: 815px;
+   
+}
+
+.about-tajam-transition__full {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: hsl(176, 100%, 44%);
+   margin-right: 3px;
+}
+
+.about-tajam-transition__empty {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    border: 1px solid  hsl(176, 100%, 44%);
+    margin-right: 3px;
+}
