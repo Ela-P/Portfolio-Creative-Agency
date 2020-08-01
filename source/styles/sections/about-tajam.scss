@@ -1,24 +1,29 @@
 .about-tajam {
-    min-width: 1620px;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     background:  url("../../img/trees.png");
     background-size: cover;
    // background: linear-gradient( hsl(246, 81%, 10%) 0%, hsl(258, 53%, 24%) 100%),;
 }
 
-.about-tajam__img {
-    width: 100%;
-}
+
 
 .about-tajam__icon {
     display: flex;
     width: 44px;
     height: 50px;
-    background-color:  hsl(176, 100%, 44%) 0%, hsl(199, 56%, 55%);
+    color:  hsl(176, 100%, 44%);
 }
+
+.about-tajam__img {
+    width: 100%;
+    fill:  hsl(176, 100%, 44%);
+}
+
 .about-tajam__brand {
+    font-family: 'Roboto', sans-serif;
     display: flex;
-     color: hsl(199, 56%, 55%);
+    color:  hsl(176, 100%, 44%);
     font-family: "Roboto - Thin";
     font-size: 30px;
     font-weight: 400;
@@ -37,20 +42,21 @@
 }
 
 .about-tajam-menu__item {
+    font-family: "Roboto - Black";
     padding-top: 40px;
     padding-right: 20px;
-    font-family: "Roboto - Black";
+    display: block;
     font-weight: 400;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
 
-.activ {
+.activ{
     color:  hsl(176, 100%, 44%);
 }
 
 
-.about-tajam-name {
+.tajam-main-name {
 min-width: 510px;
 min-height: 31px;
 display: flex;
@@ -59,9 +65,9 @@ padding-top: 180px;
 
 }
 
-.about-tajam-name__title {
+.tajam-main-name__title {
     color: #ffffff;
-    font-family: "Playfair Display - Black";
+    font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0.32px;
@@ -80,7 +86,7 @@ padding-top: 180px;
     }
 }
 
-.about-tajam-name__line {
+.tajam-main-name__line {
 display: flex;
 justify-content: center;
 padding-top: 20px;
@@ -93,24 +99,29 @@ padding-bottom: 50px;
     border: 1px solid hsl(176, 100%, 44%);
 }
 
-.about-tajam-name-subtitle {
+.tajam-main-name-subtitle {
     width: 771px;
    height: 62px;
    margin: 0 auto;
 }
 
-.about-tajam-name-subtitle__description {
-text-align: center;
-color: #ffffff;
-font-family: Roboto;
-font-size: 14px;
-font-weight: 300;
-line-height: 24px;
-letter-spacing: 0.7px;
-animation: show-from-bottom 7s ease;
+.tajam-main {
+    display: flex;
+}
+
+.tajam-main-name-subtitle__description {
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    animation: show-from-bottom 7s ease;
     transform: translateY(45px);
     opacity: 0;
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes show-from-bottom {
@@ -120,13 +131,16 @@ animation: show-from-bottom 7s ease;
     }
 }
 
-.about-tajam-click {
-    position: absolute;
-    top: 540px;
-    left: 770px;
-    border: 1px solid hsl(176, 100%, 44%);
+.tajam-main-click {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 50px;
+   
+ 
 }
-.about-tajam-click__button {
+.tajam-main-click__button {
+    font-family: 'Hammersmith One', sans-serif;
     padding: 15px;
     background: transparent;
     color: hsl(176, 100%, 44%);
@@ -134,17 +148,20 @@ animation: show-from-bottom 7s ease;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
+    opacity: 0.85;
+    border: 1px solid hsl(176, 100%, 44%);
 }
 
-.about-tajam-transition {
+.tajam-main-transition {
     display: flex;
-    position: absolute;
-    top: 770px;
-    left: 815px;
+   justify-content: center;
+   padding-top: 130px;
+   padding-bottom: 70px;
+ 
    
 }
 
-.about-tajam-transition__full {
+.tajam-main-transition__full {
     width: 10px;
     height: 10px;
     border-radius: 50px;
@@ -152,7 +169,7 @@ animation: show-from-bottom 7s ease;
    margin-right: 3px;
 }
 
-.about-tajam-transition__empty {
+.tajam-main-transition__empty {
     width: 10px;
     height: 10px;
     border-radius: 50px;
