@@ -1,9 +1,8 @@
 .our-story-view {
-  width: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-   
 }
 
 .our-story-view-name {
@@ -20,7 +19,6 @@
 }
 
 .our-story-view-name__title {
-    
     color: hsl(257, 10%, 27%);
     font-family: "Playfair Display";
     font-size: 22px;
@@ -44,7 +42,6 @@
     font-weight: 300;
     line-height: 22px;
     letter-spacing: 0.42px;
-    
 }
 
 .our-story-click {
@@ -56,14 +53,14 @@
 }
 
  .our-story-click__button {
-     font-family: 'Hammersmith One', sans-serif;
-     padding: 15px;
-     background: transparent;
-     color: hsl(176, 100%, 44%);
-     font-family: "Hammersmith One";
-     font-size: 16px;
-     font-weight: 400;
-     text-transform: uppercase;
-     opacity: 0.85;
-     border: 1px solid hsl(176, 100%, 44%);
+    font-family: 'Hammersmith One', sans-serif;
+    padding: 15px;
+    background: transparent;
+    color: hsl(176, 100%, 44%);
+    font-family: "Hammersmith One";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.85;
+    border: 1px solid hsl(176, 100%, 44%);
  }
