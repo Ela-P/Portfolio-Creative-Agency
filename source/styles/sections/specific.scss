@@ -1,0 +1,101 @@
+.specific {
+    max-width: 100%;
+    min-height: 100%;
+    background: url("../../img/specific.png");
+    background-size: cover;
+}
+
+.specific-sign {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.specific-sign__view {
+    opacity: 0.9;
+    color: #853030;
+    font-family: "Playfair Display";
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.specific-text {
+    display: flex;
+    justify-content: center;
+}
+
+.specific-text__view {
+    width: 770px;
+    height: 95px;
+    opacity: 0.85;
+    color: #a55555;
+    font-family: "Playfair Display";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+
+.specific-text-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.specific-text-name__view {
+    color: #7a4949;
+    font-family: "Roboto - Black";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+
+.specific-text-name__position {
+    opacity: 0.7;
+    color: #be6969;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.specific-icon-scroll {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.specific-icon__view {
+    display: flex;
+}
+
+.specific-icon-list {
+    display: flex;
+}
+
+.specific-icon__link {
+    padding-left: 1rem;
+}
+
+.specific-icon-click__button {
+    opacity: 0.85;
+    background: transparent;
+    border: none;
+    color: hsl(258, 53%, 24%);
+    opacity: 0.85;
+    font-size: 2rem;
+}
+
+
