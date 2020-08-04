@@ -1,4 +1,4 @@
-.information {
+.inform {
     width: 100%;
     height: 100%;
     background: url("../../img/footer.png");
@@ -6,14 +6,14 @@
     display: flex;
 }
 
-.information-icon {
+.inform-icon {
    display: flex;
     width: 44px;
     height: 50px;
     color:  hsl(176, 100%, 44%);
 }
 
-.information__brand {
+.inform__brand {
     display: flex;
     color:  hsl(176, 100%, 44%);
     font-family: "Roboto - Thin";
@@ -21,7 +21,7 @@
     font-weight: 400;
 }
 
-.information-studio-list__link {
+.inform-studio-list__link {
     width: 237px;
     height: 63px;
     color: hsl(0, 7%, 20%);
@@ -34,12 +34,12 @@
 }
 
 
-.information-direction {
+.inform-direction {
     display: flex;
     justify-content: space-around;
 }
 
-.information-text {
+.inform-text {
     width: 283px;
     height: 89px;
     display: flex;
@@ -47,24 +47,24 @@
 }
 
 
-.information-say {
+.inform-say {
     display: flex;
     flex-direction: column;
 }
 
 
-.information-app {
+.inform-app {
     display: flex;
     flex-direction: row;
 }
 
-.finformation-footer-list {
+.finform-footer-list {
     display: flex;
     flex-direction: row;
 }
 
 
-.information-footer {
+.inform-footer {
     display: flex;
     justify-content: space-between;
 }
