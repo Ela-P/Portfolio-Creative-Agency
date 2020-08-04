@@ -1,0 +1,70 @@
+.information {
+    width: 100%;
+    height: 100%;
+    background: url("../../img/footer.png");
+    background-size: cover;
+    display: flex;
+}
+
+.information-icon {
+   display: flex;
+    width: 44px;
+    height: 50px;
+    color:  hsl(176, 100%, 44%);
+}
+
+.information__brand {
+    display: flex;
+    color:  hsl(176, 100%, 44%);
+    font-family: "Roboto - Thin";
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.information-studio-list__link {
+    width: 237px;
+    height: 63px;
+    color: hsl(0, 7%, 20%);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+ 
+    letter-spacing: 0.35px;
+}
+
+
+.information-direction {
+    display: flex;
+    justify-content: space-around;
+}
+
+.information-text {
+    width: 283px;
+    height: 89px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.information-say {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.information-app {
+    display: flex;
+    flex-direction: row;
+}
+
+.finformation-footer-list {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.information-footer {
+    display: flex;
+    justify-content: space-between;
+}
