@@ -1,14 +1,22 @@
 //write here your scss styles
+@import "../styles/shared/index.scss";
+@import "./reset.scss";
+@import "./sections/index.scss";
 
-@import '../styles/shared/index.scss';
-@import './sections/index.scss';
-@import './reset.scss';
+:root {
+  --hue: 180;
+}
 
 html {
-    
-    font-size: 16px;
+  font-size: 16px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container--no-padding {
-    padding: 0;
+  padding: 0;
 }

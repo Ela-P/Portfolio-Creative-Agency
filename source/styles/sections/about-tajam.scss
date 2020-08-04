@@ -1,176 +1,168 @@
 .about-tajam {
-    width: 100%;
-    height: 100%;
-    background:  url("../../img/trees.png");
-    background-size: cover;
-   // background: linear-gradient( hsl(246, 81%, 10%) 0%, hsl(258, 53%, 24%) 100%),;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
-
-
-.about-tajam__icon {
-    display: flex;
-    width: 44px;
-    height: 50px;
-    color:  hsl(176, 100%, 44%);
+.about-tajam__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
-.about-tajam__img {
-    width: 100%;
-    fill:  hsl(176, 100%, 44%);
-}
-
-.about-tajam__brand {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    color:  hsl(176, 100%, 44%);
-    font-family: "Roboto - Thin";
-    font-size: 30px;
-    font-weight: 400;
-}
 .about-tajam-nav {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+  flex: 1;
+}
 
+.about-tajam__logo {
+  width: 128px;
+  display: block;
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .about-tajam-menu {
-    display: flex;
-    justify-content: flex-end;
-}
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0;
 
-.about-tajam-menu__item {
-    font-family: "Roboto - Black";
-    padding-top: 40px;
-    padding-right: 20px;
+  &__item {
+    font-family: "Roboto";
     display: block;
-    font-weight: 400;
+    font-weight: 800;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
-}
+    margin-left: 20px;
+    font-size: 14px;
+    &.active {
+      color: $primary;
+    }
 
-.activ{
-    color:  hsl(176, 100%, 44%);
+    a {
+      color: inherit;
+    }
+  }
 }
-
 
 .tajam-main-name {
-min-width: 510px;
-min-height: 31px;
-display: flex;
-justify-content: center;
-padding-top: 180px;
 }
 
 .tajam-main-name__title {
-    color: #ffffff;
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 0.32px;
-    text-align: center;
-    animation:show-from-top  5s ease;
-    transform: translateY(-45px);
-    opacity: 0;
-    animation-fill-mode: forwards;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  animation: show-from-top 2s ease;
+  transform: translateY(-45px);
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 @keyframes show-from-top {
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tajam-main {
+  @include bg-with-overlay("../../img/trees.png");
+  min-height: 100vh;
+  text-align: center;
 }
 
 .tajam-main-name__line {
-display: flex;
-justify-content: center;
-padding-top: 20px;
-padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .about-tajam-line {
-    width: 50px;
-    box-align: center;
-    border: 1px solid hsl(176, 100%, 44%);
-}
-
-.tajam-main-name-subtitle {
-    width: 771px;
-   height: 62px;
-   margin: 0 auto;
+  width: 50px;
+  box-align: center;
+  border: 1px solid $primary;
 }
 
 .tajam-main {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper {
+    max-width: 770px;
+    margin: 0 auto;
+  }
 }
 
 .tajam-main-name-subtitle__description {
-    text-align: center;
-    color: #ffffff;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.7px;
-    animation: show-from-bottom 7s ease;
-    transform: translateY(45px);
-    opacity: 0;
-    animation-fill-mode: forwards;
-    
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  animation: show-from-bottom 2s ease;
+  transform: translateY(45px);
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 @keyframes show-from-bottom {
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tajam-main-click {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-top: 50px;
-   
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
 }
+
 .tajam-main-click__button {
-    font-family: 'Hammersmith One', sans-serif;
-    padding: 15px;
-    background: transparent;
-    color: hsl(176, 100%, 44%);
-    font-family: "Hammersmith One";
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    opacity: 0.85;
-    border: 1px solid hsl(176, 100%, 44%);
+  font-family: "Hammersmith One", sans-serif;
+  padding: 15px;
+  background: transparent;
+  color: $primary;
+  font-family: "Hammersmith One";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0.85;
+  border: 1px solid $primary;
 }
 
 .tajam-main-transition {
-    display: flex;
-   justify-content: center;
-   padding-top: 130px;
-   padding-bottom: 70px;
- 
-   
-}
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 70px;
 
-.tajam-main-transition__full {
+  &__dot {
+    display: block;
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    background-color: hsl(176, 100%, 44%);
-   margin-right: 3px;
-}
-
-.tajam-main-transition__empty {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    border: 1px solid  hsl(176, 100%, 44%);
+    border: 1px solid $primary;
     margin-right: 3px;
+    padding: 0;
+    background: transparent;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--full {
+      background-color: $primary;
+    }
+  }
 }

@@ -6,9 +6,6 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <link rel="stylesheet" href="./reset.css" type="text/css" />
-  <link rel="stylesheet" href="./style.css" type="text/css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,37 +14,36 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display&family=Roboto:wght@100;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+
 
   <title> Creative Agency</title>
 </head>
 
 <body>
 
-  <header class="about-tajam ">
-    <div class="container-lg container--no-padding">
-      <div class="about-tajam__icon">
-        <img class="about-tajam__img" src="../img/tajan.vector.svg" alt="img"/>
-        <div class="about-tajam__brand">tajam</div>
+  <header class="about-tajam">
+    <div class="container-lg">
+      <div class="about-tajam__header">
+        <a class="about-tajam__logo" href="#">
+          <img src="../img/Logo.png" alt="Logo"/>
+        </a>
+          <nav class="about-tajam-nav">
+            <ul class="about-tajam-menu">
+              <li class="about-tajam-menu__item active"><a href="#">HOME</a></li>
+              <li class="about-tajam-menu__item"><a href="#">ABOUT</a></li>
+              <li class="about-tajam-menu__item"><a href="#">EXPERTISE</a></li>
+              <li class="about-tajam-menu__item"><a href="#">TEAMS</a></li>
+              <li class="about-tajam-menu__item"><a href="#">WORKS</a></li>
+              <li class="about-tajam-menu__item"><a href="#">PEOPLE SAY</a></li>
+              <li class="about-tajam-menu__item"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
       </div>
-
     </div>
-
-    <nav class="about-tajam-nav">
-      <div class="container-lg cotnainer--no-padding">
-        <ul class="about-tajam-menu">
-          <li class="about-tajam-menu__item activ"><a href="#">HOME</a></li>
-          <li class="about-tajam-menu__item"><a href="#">ABOUT</a></li>
-          <li class="about-tajam-menu__item"><a href="#">EXPERTISE</a></li>
-          <li class="about-tajam-menu__item"><a href="#">TEAMS</a></li>
-          <li class="about-tajam-menu__item"><a href="#">WORKS</a></li>
-          <li class="about-tajam-menu__item"><a href="#">PEOPLE SAY</a></li>
-          <li class="about-tajam-menu__item"><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav>
-
+  </header>
     <main class="tajam-main">
-      <div class="container-lg container--no-padding">
+      <div class="tajam-main__wrapper">
         <div class="tajam-main-name">
           <h1 class="tajam-main-name__title">
             We Are Awesome Creative Agency
@@ -71,23 +67,22 @@
           <button class="tajam-main-click__button" type="submit"> LEARN MORE </button>
         </div>
 
-        <div class="tajam-main-transition">
-          <div class="tajam-main-transition__full">
-          </div>
-          <div class="tajam-main-transition__empty">
-          </div>
-          <div class="tajam-main-transition__empty">
-          </div>
-          <div class="tajam-main-transition__empty">
-          </div>
-        </div>
+      </div>
+      <div class="tajam-main-transition">
+        <button class="tajam-main-transition__dot tajam-main-transition__dot--full">
+        </button>
+        <button class="tajam-main-transition__dot">
+        </button>
+        <button class="tajam-main-transition__dot">
+        </button>
+        <button class="tajam-main-transition__dot">
+        </button>
       </div>
     </main>
-  </header>
 
 
   <section class="our-story">
-    <div class="container-lg container--no-padding">
+    <div class="container-lg">
 
       <div class="our-story-view">
 
@@ -124,19 +119,19 @@
     </div>
   </section>
 
-  <div class="our-video">
+  <section class="our-video">
 
-    <div class="our-video__playbatton">
-      <img class="our-video__play" src="../img/play.svg" alt="pl" />
-    </div>
+    <button class="our-video__playbutton">
+      <i class="fa fa-play"></i>
+    </button>
     <div class="our-video__name">
       WATCH OUR STORY
     </div>
 
-  </div>
+  </section>
 
-  <div class="expertise">
-    <div class="container container--no-padding">
+  <section class="expertise">
+    <div class="container">
 
       <div class="expertise-name">
         <h2 class="expertise-name__title">EXPERTISE </h2>
@@ -147,10 +142,6 @@
       </div>
 
       <div class="expertise-view">
-        <div class="container container--no-padding">
-          <div class="expertise-view-row">
-
-
             <div class="expertise-view-border">
               <div class="expertise-view-row-section__icon">
                 <i class="fa fa-desktop" aria-hidden="true"></i>
@@ -213,14 +204,12 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </div>
-  </div>
+  </section>
 
 
   <div class="team">
-    <div class="container container--no-padding">
+    <div class="container">
 
       <div class="team-name">
         <h2 class="team-name__title">MEET OUR AMAZING TEAM </h2>
@@ -231,12 +220,12 @@
       </div>
     </div>
 
-    <div class="container container--no-padding">
+    <div class="container">
       <div class="row">
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="team-photo">
-            <img class="team-photo__icon" src="../img/photo.png" alt="pl" />
+            <img class="team-photo__image" src="https://lumiere-a.akamaihd.net/v1/images/ct_aladdin2019_aladdin_17975_53d203c9.jpeg?region=0,0,600,600" alt="pl" />
             <div class="team-photo-name">
               <h2 class="team-photo-name__name">SEMF UCUK</h2>
               <p class="team-photo-name__position">
@@ -246,9 +235,9 @@
           </div>
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="team-photo">
-            <img class="team-photo__icon" src="../img/photo.png" alt="pl" />
+            <img class="team-photo__image" src="https://www.liberaldictionary.com/wp-content/uploads/2018/12/men-1.jpg" alt="pl" />
             <div class="team-photo-name">
               <h2 class="team-photo-name__name">DIK ADALIN</h2>
               <p class="team-photo-name__position">
@@ -258,9 +247,9 @@
           </div>
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="team-photo">
-            <img class="team-photo__icon" src="../img/photo.png" alt="pl" />
+            <img class="team-photo__image" src="../img/photo.png" alt="pl" />
             <div class="team-photo-name">
               <h2 class="team-photo-name__name">JENG KOL</h2>
               <p class="team-photo-name__position">
@@ -270,9 +259,9 @@
           </div>
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="team-photo">
-            <img class="team-photo__icon" src="../img/photo.png" alt="pl" />
+            <img class="team-photo__image" src="../img/photo.png" alt="pl" />
             <div class="team-photo-name">
               <h2 class="team-photo-name__name">PET ROMAK</h2>
               <p class="team-photo-name__position">
@@ -285,7 +274,7 @@
     </div>
 
     <div class="team-footer">
-      <div class="container container--no-padding">
+      <div class="container">
         <div class="team-footer-text">
 
           <p class="team-footer-text__view">
@@ -302,7 +291,7 @@
 
 
   <div class="our-works">
-    <div class="container container--no-padding">
+    <div class="container">
       <div class="our-works-name">
         <div>
           <h2 class="our-works-name__title"> OUR WORKS </h2>
@@ -313,69 +302,72 @@
     </div>
     <div class="our-works-view">
       <div class="row ">
-        <div class="col-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
+            <img class="our-works-view-picture__icon" src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" alt="pl" />
           </div>
         </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/2.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/3.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/4.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/3.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/3.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/4.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="our-works-view-picture">
-            <img class="our-works-view-picture__icon" src="../img/3.png" alt="pl" />
-          </div>
-        </div>
-        <div class="col-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="our-works-view-picture">
             <img class="our-works-view-picture__icon" src="../img/2.png" alt="pl" />
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
           <div class="our-works-view-picture">
             <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
           </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/2.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/2.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/2.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/2.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/1.png" alt="pl" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+          <div class="our-works-view-picture">
+            <img class="our-works-view-picture__icon" src="../img/2.png" alt="pl" />
+          </div>
+        </div>
+
+
+
       </div>
     </div>
-    <div class="container container--no-padding">
+    <div class="container">
       <div class="our-work-click">
         <button class="our-work-click__button" type="submit"> LOAD MORE </button>
       </div>
@@ -383,7 +375,7 @@
   </div>
 
   <div class="specific">
-    <div class="container container--no-padding">
+    <div class="container">
 
       <div class="specific-sign">
         <h2 class="specific-sign__view"> “ </h2>
@@ -435,7 +427,7 @@
 
 
 <div class="information">
-  <div class="container container--no-padding">
+  <div class="container">
 
   <div class= "information-title">
     <h2 class= "information-title-view"> GIVE US A GOOD NEWS</h2>
@@ -508,12 +500,11 @@
 
 
 <footer class="informa">
-  <div class="container container--no-padding">
+  <div class="container">
 
-    <div class="inform__icon">
-      <img class="information__img" src="../img/tajan.vector.svg" alt="img" />
-      <div class="information__brand">tajam</div>
-      </div>
+    <a class="about-tajam__logo" href="#">
+      <img src="../img/Logo.png" alt="Logo"/>
+    </a>
 
 
 <div class="inform-direction">

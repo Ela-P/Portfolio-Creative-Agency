@@ -1,8 +1,5 @@
 .specific {
-    max-width: 100%;
-    min-height: 100%;
-    background: url("../../img/specific.png");
-    background-size: cover;
+    @include bg-with-overlay("../../img/specific.png");
 }
 
 .specific-sign {

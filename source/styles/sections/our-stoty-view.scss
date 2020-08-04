@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .our-story-view-name {
@@ -10,8 +11,7 @@
 }
 
 .our-story-view__picture {
-    width: 235px;
-    height: 229px;
+    flex: 0 0 235px;
 }
 
 .our-story-view__img {
@@ -30,8 +30,7 @@
 }
 
 .our-story-view-name__width {
-    width: 538px;
-    height: 146px;
+    max-width: 538px;
 }
 
 .our-story-view-name__description {
@@ -56,11 +55,11 @@
     font-family: 'Hammersmith One', sans-serif;
     padding: 15px;
     background: transparent;
-    color: hsl(176, 100%, 44%);
+    color: $primary;
     font-family: "Hammersmith One";
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     opacity: 0.85;
-    border: 1px solid hsl(176, 100%, 44%);
+    border: 1px solid $primary;
  }

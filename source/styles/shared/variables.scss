@@ -1,0 +1,18 @@
+// Colors
+$primaryHue: var(--hue);
+
+
+$white: #ffffff;
+$primary: hsl($primaryHue, 100%, 44%);
+
+
+$gradient-color: calc(#{$primaryHue} + 70);
+$gradient-from: hsla($gradient-color, 81%, 10%, 0.85);
+$gradient-to: hsla($gradient-color, 53%, 24%, 0.85);
+
+@mixin bg-with-overlay($image-path) {
+    background-image: linear-gradient(to right, $gradient-from 0%, $gradient-to), 
+                      url(#{$image-path});
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

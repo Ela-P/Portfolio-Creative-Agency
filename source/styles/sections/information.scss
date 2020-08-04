@@ -1,9 +1,3 @@
-.information {
-    max-width: 1600px;
-    max-height: 654px;
-    background-color: hsl(0, 0%, 100%);
-}
-
 .information-title {
     display: flex;
    
@@ -59,7 +53,7 @@
 .view-click-button {
     width: 120px;
     height: 40px;
-    border: 1px solid #00e0d0;
+    border: 1px solid $primary;
 
 }
 
@@ -71,7 +65,7 @@
 .view-click-message {
     border: none;
     text-transform: uppercase;
-    color: #00e0d0;
+    color: $primary;
     font-family: "Hammersmith One";
     font-size: 16px;
     font-weight: 400;
