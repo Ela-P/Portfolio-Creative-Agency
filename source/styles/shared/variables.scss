@@ -16,3 +16,29 @@ $gradient-to: hsla($gradient-color, 53%, 24%, 0.85);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+// fonts
+$fontsRoboto:"Roboto";
+$fontsPlayfair:"Playfair Display";
+$fontsHammersmith:"Hammersmith One";
+
+
+ // flex space
+ %content{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  %column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  %row{
+  display: flex;
+  flex-direction: row;
+  }
+
+  // border
+  $borderw:1px solid hsl(0, 0%, 100%);

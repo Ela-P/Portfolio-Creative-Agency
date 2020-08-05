@@ -1,69 +1,123 @@
 .inform {
     width: 100%;
     height: 100%;
-    background-image: url("../../img/footer.png");
+    @include bg-with-overlay("../../img/footer.png");
     background-size: cover;
+    font-family: $fontsRoboto;
+    color: $white;
+    line-height: 1.6rem;
+    letter-spacing: 0.35px;
+    font-size: 0.87rem;
 }
 
-.inform-icon {
-   display: flex;
-    width: 44px;
-    height: 50px;
-    color:  $primary;
+.inform-item {
+    @extend %content;
+        align-items: flex-start;
+    }
+
+@media screen and (max-width:793px){
+        .footer__item{
+            flex-direction: column;
+        }
+     }
+
+.inform-direction {
+    padding-top: 3.7rem;
 }
 
-.inform__brand {
-    display: flex;
-    color:  $primary;
-    font-family: "Roboto - Thin";
-    font-size: 30px;
-    font-weight: 400;
+.inform-studio {
+    padding-top: 5.5rem;
+}
+
+.inform-studio__title {
+    font-weight: 600;
+}
+
+.inform-studio-list {
+    padding-top: 1.5rem;
+    
 }
 
 .inform-studio-list__link {
     width: 237px;
     height: 63px;
-    color: hsl(0, 7%, 20%);
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 26px;
- 
-    letter-spacing: 0.35px;
+    margin-bottom: 1rem;
 }
+
+.inform-say__title {
+    font-weight: 600;
+}
+
 
 
 .inform-direction {
-    display: flex;
-    justify-content: space-around;
+    width: 30%;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .inform-text {
+@extend %column;
     width: 283px;
     height: 89px;
-    display: flex;
-    flex-direction: column;
+    padding-top: 1.5rem;
 }
 
-
 .inform-say {
-    display: flex;
-    flex-direction: column;
+    padding-top: 5.5rem;
+@extend %column;
+}
+
+.inform-say__subs {
+    padding-top: 1.5rem;
+}
+
+.inform-say-view-input {
+    width: 211px;
+    height: 45px;
+    border: $borderw;
+    color: $white;
+    background: transparent;
+    padding-left: 1rem;
+    
+}
+
+.inform-say__click {
+    width: 70px;
+    height: 45px;
+    border: $borderw;
+    background-color: $white;
+    opacity: 0.5;
 }
 
 
 .inform-app {
-    display: flex;
-    flex-direction: row;
+@extend %row;
 }
 
-.finform-footer-list {
-    display: flex;
-    flex-direction: row;
+.inform-app__window {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: $borderw;
+    background: transparent;
+    margin: 1rem 0.3rem;
 }
 
+.watch {
+    padding: 0.5rem 0.5rem;
+}
+
+.inform-footer-list {
+@extend %row;
+}
+
+.inform-footer-list-section__link {
+    padding-right: 2rem;
+}
 
 .inform-footer {
-    display: flex;
-    justify-content: space-between;
+@extend %content;
+padding-top: 4.3rem;
+padding-bottom: 4.3rem;
 }
