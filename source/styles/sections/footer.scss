@@ -10,9 +10,8 @@
     font-size: 0.87rem;
 }
 
-@media screen and (max-width:793px){
+@media screen and (max-width:1024px){
     .inform{
-        flex-direction: column;
         flex-wrap: wrap;
     }
 }
@@ -72,6 +71,7 @@
 }
 
 .inform-say__subs {
+    display: flex;
     padding-top: 1.5rem;
 }
 
@@ -82,6 +82,7 @@
     color: $white;
     background: transparent;
     padding-left: 1rem;
+    margin-right: 1rem;
     
 }
 
