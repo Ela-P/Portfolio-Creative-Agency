@@ -7,6 +7,7 @@
 }
 
 .information-form {
+    flex: 1;
     padding-bottom: 4.3rem;
     @media screen and (max-width:1024px){
         flex: 1 1 100%;
@@ -14,6 +15,7 @@
 }
 
 .information-clients {
+    flex: 1;
    padding-left: 100px;
    @media screen and (max-width:1024px){
     flex: 1 1 100%;
@@ -111,19 +113,19 @@
 .view-click-button {
     width: 120px;
     height: 40px;
-    border: 1px solid $primary;
 }
 
 .view-click-message {
     border: none;
     text-transform: uppercase;
     color: $primary;
-    font-family: "Hammersmith One";
+    font-family: $fontsHammersmith;
     font-size: 16px;
     font-weight: 400;
     background: transparent;
     text-transform: uppercase;
-    padding-left: 1.5rem;
-    padding-top: 1rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    border: 1px solid $primary;
 }
 
