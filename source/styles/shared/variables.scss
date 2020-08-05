@@ -1,6 +1,7 @@
 // Colors
 $primaryHue: var(--hue);
 
+$midi: #413d4b;
 
 $white: #ffffff;
 $primary: hsl($primaryHue, 100%, 44%);
@@ -28,6 +29,11 @@ $fontsHammersmith:"Hammersmith One";
  %content{
   display: flex;
   justify-content: space-between;
+  }
+
+  %space{
+    display: flex;
+    justify-content: space-around;
   }
 
   %column{
