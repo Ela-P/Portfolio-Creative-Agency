@@ -1,47 +1,69 @@
 .expertise {
-    background-color: #ffffff;
+    background-color: $white;
 }
 
 .expertise-name__title {
-    color: #413d4b;
-    font-family: "Playfair Display";
-    font-size: 22px;
+    color: $midi;
+    font-family: $fontsPlayfair;
+    font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1.1px;
-    padding-top: 70px;
+    padding-top: 4.5rem;
 }
 
 .expertise-name__description {
     opacity: 0.75;
-    color: #2f2d35;
-    font-family: "Playfair Display";
-    font-size: 14px;
+    color: $midi;
+    font-family: $fontsPlayfair;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 1.05px;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 0.9rem;
+    padding-bottom: 1.3rem;
 }
 
 .expertise-name__line {
     width: 50px;
     height: 2px;
-    background-color: #413d4b;
+    background-color: $midi;
     opacity: 0.3;
 }
 
 .expertise-view {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 3rem;
 }
 
 .expertise-view-border {
     text-align: center;
     flex: 1 1 33%;
-    padding: 10px;
+    border-right: $borderg;
+    border-top: $borderg;
+    padding: 0 1.3rem;
 }
+
+.expertise-view-border:nth-child(1) {
+    border-top: none;
+  } 
+  .expertise-view-border:nth-child(2) {
+    border-top: none;
+  } 
+  .expertise-view-border:nth-child(3) {
+    border-top: none;
+  } 
+
+.expertise-view-border:nth-child(3) {
+    border-right: none;
+  } 
+  .expertise-view-border:nth-child(6) {
+    border-right: none;
+  } 
+
+
 
 .expertise-view-row-section__icon {
   
@@ -52,9 +74,9 @@
 }
 
 .expertise-view-row-section__title {
-    color: hsl(257, 10%, 27%);
-    font-family: "Roboto";
-    font-size: 14px;
+    color: $midi;
+    font-family: $fontsRoboto;
+    font-size: 0.8rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.7px;
@@ -64,13 +86,13 @@
     max-width: 254px;
     margin: 0 auto;
     opacity: 0.75;
-    color: #333333;
-    font-family: Roboto;
-    font-size: 14px;
+    color: $midi;
+    font-family: $fontsRoboto;
+    font-size: 0.8rem;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.5rem;
     text-align: center;
     letter-spacing: 0.7px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
 }
