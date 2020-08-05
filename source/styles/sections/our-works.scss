@@ -3,24 +3,23 @@
 }
 
 .our-works-name {
-  display: flex;
-  justify-content: space-between;
+@extend %content;
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
 .our-works-name__title {
-  color: #413d4b;
-  font-family: "Playfair Display";
-  font-size: 22px;
+  color: $midi;
+  font-family: $fontsPlayfair;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.1px;
 }
 
 .our-works-name__text {
-  color: #413d4b;
-  font-family: Roboto;
+  color: $midi;
+  font-family: $fontsRoboto;
   font-size: 14px;
   font-weight: 300;
 
@@ -52,11 +51,10 @@
 }
 
 .our-work-click__button {
-  padding: 15px;
+  padding: 1rem;
   background: transparent;
   color: $primary;
-  font-family: "Hammersmith One";
-  font-size: 16px;
+  font-family: $fontsHammersmith;
   font-weight: 400;
   text-transform: uppercase;
   opacity: 0.85;
