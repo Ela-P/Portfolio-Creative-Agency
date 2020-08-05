@@ -6,49 +6,56 @@ $midi: #413d4b;
 $white: #ffffff;
 $primary: hsl($primaryHue, 100%, 44%);
 
-
 $gradient-color: calc(#{$primaryHue} + 70);
 $gradient-from: hsla($gradient-color, 81%, 10%, 0.85);
 $gradient-to: hsla($gradient-color, 53%, 24%, 0.85);
 
 @mixin bg-with-overlay($image-path) {
-    background-image: linear-gradient(to right, $gradient-from 0%, $gradient-to), 
-                      url(#{$image-path});
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
+  background-image: linear-gradient(to right, $gradient-from 0%, $gradient-to),
+    url(#{$image-path});
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 // fonts
-$fontsRoboto:"Roboto";
-$fontsPlayfair:"Playfair Display";
-$fontsHammersmith:"Hammersmith One";
+$fontsRoboto: "Roboto";
+$fontsPlayfair: "Playfair Display";
+$fontsHammersmith: "Hammersmith One";
 
+// flex space
 
- // flex space
-
- %content{
+%content {
   display: flex;
   justify-content: space-between;
-  }
+}
 
-  %space{
-    display: flex;
-    justify-content: space-around;
-  }
+%space {
+  display: flex;
+  justify-content: space-around;
+}
 
-  %column{
-    display: flex;
-    flex-direction: column;
-  }
+%column {
+  display: flex;
+  flex-direction: column;
+}
 
-  %row{
+%row {
   display: flex;
   flex-direction: row;
+}
+
+%wrap-for-small-screen {
+  @media screen and (max-width: 1024px) {
+    flex-wrap: wrap;
   }
+}
 
+%padding-mixin {
+  padding: 5rem 0;
+  margin: 0 auto;
+}
 
-  // border
-  $borderw:1px solid hsl(0, 0%, 100%);
+// border
+$borderw: 1px solid hsl(0, 0%, 100%);
 
-  $borderg: 1px solid hsl(0, 0%, 50%);
+$borderg: 1px solid hsl(0, 0%, 50%);

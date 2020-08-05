@@ -26,8 +26,7 @@
 }
 
 .specific-text__view {
-    width: 770px;
-    height: 95px;
+    max-width: 770px;
     opacity: 0.85;
     color: $white;
     font-family: $fontsPlayfair;

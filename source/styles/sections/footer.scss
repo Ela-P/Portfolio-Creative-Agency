@@ -1,127 +1,118 @@
 .inform {
-    width: 100%;
-    height: 100%;
-    @include bg-with-overlay("../../img/footer.png");
-    background-size: cover;
-    font-family: $fontsRoboto;
-    color: $white;
-    line-height: 1.6rem;
-    letter-spacing: 0.35px;
-    font-size: 0.87rem;
+  width: 100%;
+  height: 100%;
+  @include bg-with-overlay("../../img/footer.png");
+  background-size: cover;
+  font-family: $fontsRoboto;
+  color: $white;
+  line-height: 1.6rem;
+  letter-spacing: 0.35px;
+  font-size: 0.87rem;
 }
 
-@media screen and (max-width:1024px){
-    .inform{
-        flex-wrap: wrap;
-    }
-}
 
 .inform-item {
-    @extend %content;
-        align-items: flex-start;
-    }
-
+  @extend %content;
+  align-items: flex-start;
+  @extend %wrap-for-small-screen;
+}
 
 .inform-direction {
-      padding-top: 3.7rem;
+  padding-top: 3.7rem;
 }
 
 .inform-studio {
-    padding-top: 5.5rem;
+  padding-top: 5.5rem;
 }
 
 .inform-studio__title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .inform-studio-list {
-    padding-top: 1.5rem;
-    
+  padding-top: 1.5rem;
 }
 
 .inform-studio-list__link {
-    width: 237px;
-    height: 63px;
-    margin-bottom: 1rem;
+  max-width: 240px;
+  margin-bottom: 1rem;
 }
 
 .inform-say__title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
-
-
 .inform-direction {
-    width: 30%;
-    justify-content: center;
-    align-items: flex-start;
+  width: 30%;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .inform-text {
-@extend %column;
-    width: 283px;
-    height: 89px;
-    padding-top: 1.5rem;
+  @extend %column;
+  max-width: 280px;
+  padding-top: 1.5rem;
 }
 
 .inform-say {
-    padding-top: 5.5rem;
-@extend %column;
-    flex-wrap: wrap;
+  padding-top: 5.5rem;
+  @extend %column;
+  flex-wrap: wrap;
 }
 
 .inform-say__subs {
-    display: flex;
-    padding-top: 1.5rem;
+  display: flex;
+  padding-top: 1.5rem;
 }
 
 .inform-say-view-input {
-    width: 211px;
-    height: 45px;
-    border: $borderw;
-    color: $white;
-    background: transparent;
-    padding-left: 1rem;
-    margin-right: 1rem;
-    
+  width: 211px;
+  border: $borderw;
+  color: $white;
+  background: transparent;
+  padding-left: 1rem;
+  margin-right: 1rem;
 }
 
 .inform-say__click {
-    width: 70px;
-    height: 45px;
-    border: $borderw;
-    background-color: $white;
-    opacity: 0.5;
+  width: 70px;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  border: $borderw;
+  background-color: $white;
+  opacity: 0.5;
 }
 
-
 .inform-app {
-@extend %row;
+  @extend %row;
 }
 
 .inform-app__window {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: $borderw;
-    background: transparent;
-    margin: 1rem 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: $borderw;
+  background: transparent;
+  margin: 1rem 0.3rem;
 }
 
 .watch {
-    padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .inform-footer-list {
-@extend %row;
+  @extend %row;
+  @extend %wrap-for-small-screen;
 }
 
 .inform-footer-list-section__link {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .inform-footer {
-@extend %content;
-padding-top: 4.3rem;
-padding-bottom: 4.3rem;
+  @extend %content;
+  @extend %wrap-for-small-screen;
+
+  padding-top: 4.3rem;
+  padding-bottom: 4.3rem;
 }
