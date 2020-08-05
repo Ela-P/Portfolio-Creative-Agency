@@ -5,17 +5,17 @@
 .specific-sign {
     display: flex;
     justify-content: center;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding-top: 4.3rem;
+    padding-bottom: 2.5rem;
 }
 
 .specific-sign__view {
     opacity: 0.9;
-    color: hsl(0, 0%, 100%);
-    font-family: "Playfair Display";
-    font-size: 100px;
+    color: $white;
+    font-family: $fontsPlayfair;
+    font-size: 6rem;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.3rem;
     letter-spacing: 3px;
     text-align: center;
 }
@@ -29,11 +29,10 @@
     width: 770px;
     height: 95px;
     opacity: 0.85;
-    color: hsl(0, 0%, 100%);
-    font-family: "Playfair Display";
-    font-size: 16px;
+    color: $white;
+    font-family: $fontsPlayfair;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.8rem;
     text-align: center;
     letter-spacing: 0.4px;
 }
@@ -42,16 +41,16 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3.1rem;
+    padding-bottom: 3.1rem;
 }
 
 .specific-text-name__view {
-    color: hsl(0, 19%, 87%);
-    font-family: "Roboto - Black";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
+    color: $white;
+    font-family: $fontsRoboto;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.3rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.7px;
@@ -59,11 +58,11 @@
 
 .specific-text-name__position {
     opacity: 0.7;
-    color: hsl(0, 30%, 88%);
-    font-family: Roboto;
-    font-size: 13px;
+    color: $white;
+    font-family: $fontsRoboto;
+    font-size: 0.7rem;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.3rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -71,7 +70,7 @@
 .specific-icon-scroll {
     display: flex;
     justify-content: center;
-    padding-bottom: 70px;
+    padding-bottom: 4.3rem;
 }
 
 .specific-icon__view {
@@ -94,9 +93,11 @@
     opacity: 0.85;
     background: transparent;
     border: none;
-    color: hsl(263, 15%, 90%);
+    color: $white;
     opacity: 0.85;
     font-size: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 

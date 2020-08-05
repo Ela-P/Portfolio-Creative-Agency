@@ -6,14 +6,28 @@
 }
 
 .about-tajam__header {
-  display: flex;
-  justify-content: space-between;
+  @extend %content;
   align-items: center;
   padding: 20px 0;
 }
 
 .about-tajam-nav {
   flex: 1;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width:793px){
+  .about-tajam-nav {
+      display: none;
+  }
+  .burger-menu {
+    display: block;
+    color: $white;
+    font-size: 2rem;
+  }
 }
 
 .about-tajam__logo {
@@ -32,13 +46,13 @@
   margin-bottom: 0;
 
   &__item {
-    font-family: "Roboto";
+    font-family: $fontsRoboto;
     display: block;
     font-weight: 800;
     text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    margin-left: 20px;
-    font-size: 14px;
+    color:$white;
+    margin-left: 1.25rem;
+    font-size: 0.8rem;
     &.active {
       color: $primary;
     }
@@ -51,9 +65,9 @@
 
 
 .tajam-main-name__title {
-  color: #ffffff;
-  font-family: "Playfair Display", serif;
-  font-size: 32px;
+  color: $white;
+  font-family: $fontsPlayfair;
+  font-size: 2rem;
   font-weight: 700;
   animation: show-from-top 2s ease;
   transform: translateY(-45px);
@@ -76,8 +90,8 @@
 .tajam-main-name__line {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 1.25rem;
+  padding-bottom: 3.25rem;
 }
 
 .about-tajam-line {
@@ -98,11 +112,11 @@
 
 .tajam-main-name-subtitle__description {
   text-align: center;
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 14px;
+  color: $white;
+  font-family: $fontsRoboto;
+  font-size: 0.8rem;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.5rem;
   animation: show-from-bottom 2s ease;
   transform: translateY(45px);
   opacity: 0;
@@ -120,16 +134,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 3.1rem;
 }
 
 .tajam-main-click__button {
-  font-family: "Hammersmith One", sans-serif;
-  padding: 15px;
+  font-family: $fontsHammersmith;
+  padding: 1rem;
   background: transparent;
   color: $primary;
-  font-family: "Hammersmith One";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   opacity: 0.85;
@@ -142,7 +155,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  bottom: 70px;
+  bottom: 4.4rem;
 
   &__dot {
     display: block;

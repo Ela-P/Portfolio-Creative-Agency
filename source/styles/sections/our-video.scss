@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: "Roboto";
+    font-family: $fontsRoboto;
 }
 
 .our-video__playbutton {
@@ -18,14 +18,13 @@
     align-items: center;
     flex-direction: column;
     background: transparent;
-    font-size: 40px;
+    font-size: 4.3rem;
     color: $white;
 }
 
 .our-video__name {
     padding-top: 30px;
     color: $white;
-    font-size: 16px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.8px;

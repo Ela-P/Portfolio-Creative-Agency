@@ -4,8 +4,8 @@
 
 .our-works-name {
 @extend %content;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 4.3rem;
+  padding-bottom: 4.3rem;
 }
 
 .our-works-name__title {
@@ -20,7 +20,7 @@
 .our-works-name__text {
   color: $midi;
   font-family: $fontsRoboto;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 300;
 
   letter-spacing: 0.7px;
@@ -46,8 +46,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 4.3rem;
+  padding-bottom: 4.3rem;
 }
 
 .our-work-click__button {

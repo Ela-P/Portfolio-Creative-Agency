@@ -10,19 +10,21 @@
     font-size: 0.87rem;
 }
 
+@media screen and (max-width:793px){
+    .inform{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
 .inform-item {
     @extend %content;
         align-items: flex-start;
     }
 
-@media screen and (max-width:793px){
-        .footer__item{
-            flex-wrap: wrap;
-        }
-     }
 
 .inform-direction {
-    padding-top: 3.7rem;
+      padding-top: 3.7rem;
 }
 
 .inform-studio {
@@ -66,6 +68,7 @@
 .inform-say {
     padding-top: 5.5rem;
 @extend %column;
+    flex-wrap: wrap;
 }
 
 .inform-say__subs {
