@@ -20,6 +20,7 @@
    @media screen and (max-width:1024px){
     flex: 1 1 100%;
     padding-left: 0;
+    padding-bottom: 3rem;
 }
    
 }
@@ -32,8 +33,7 @@
     text-transform: uppercase;
     text-align: start;
     letter-spacing: 1.1px;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    @include padding-top-bottom-1;
    
 }
 
@@ -45,8 +45,7 @@
     text-transform: uppercase;
     text-align: start;
     letter-spacing: 1.1px;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    @include padding-top-bottom-1;
     
 }
 
@@ -90,21 +89,17 @@
 .view-input {
     width: 100%;
     height: 45px;
-    border: 1px solid #000000;
+    border: 1px solid $black;
     opacity: 0.1;
-    padding-left: 1.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1.3rem;
+    @include padding-top-bottom-2;
 }
 
 .view-message {
     width: 100%;
     height: 200px;
-    border: 1px solid #000000;
+    border: 1px solid $black;
     opacity: 0.1;
-    padding-left: 1.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1.3rem;
+    @include padding-top-bottom-2;
     @media screen and (max-width:1024px){
         max-width: 100%;
     }
@@ -120,7 +115,6 @@
     text-transform: uppercase;
     color: $primary;
     font-family: $fontsHammersmith;
-    font-size: 16px;
     font-weight: 400;
     background: transparent;
     text-transform: uppercase;

@@ -3,9 +3,8 @@
 }
 
 .our-works-name {
-@extend %content;
-  padding-top: 4.3rem;
-  padding-bottom: 4.3rem;
+  @extend %content;
+  @include padding-top-bottom-1;
 }
 
 .our-works-name__title {
@@ -22,7 +21,6 @@
   font-family: $fontsRoboto;
   font-size: 0.8rem;
   font-weight: 300;
-
   letter-spacing: 0.7px;
 }
 

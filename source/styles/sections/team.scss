@@ -12,7 +12,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1.1px;
-  padding-top: 70px;
+  padding-top: 4.5rem;
 }
 
 .team-name__description {
@@ -49,7 +49,7 @@
   display: block;
 }
 .team-photo-name {
-  padding: 20px;
+  padding: 2.5rem;
 }
 .team-photo-name__name {
   color: $white;
@@ -79,15 +79,14 @@
   font-weight: 300;
   text-align: center;
   letter-spacing: 0.7px;
-  padding-top: 70px;
+  padding-top: 4.5rem;
 }
 
 .team-footer-click {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 70px;
+  @include padding-top-bottom-3;
 }
 
 .team-footer-click__button {
@@ -95,7 +94,6 @@
   padding: 15px;
   background: transparent;
   color: $primary;
-  font-size: 16px; 
   font-weight: 400;
   text-transform: uppercase;
   opacity: 0.85;

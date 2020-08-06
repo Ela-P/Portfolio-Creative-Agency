@@ -5,8 +5,7 @@
 .specific-sign {
     display: flex;
     justify-content: center;
-    padding-top: 4.3rem;
-    padding-bottom: 2.5rem;
+    @include padding-top-bottom-1;
 }
 
 .specific-sign__view {
